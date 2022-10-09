@@ -1,0 +1,48 @@
+.infoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    padding: 0.8rem;
+
+    >div {
+        display: flex;
+        gap: 1rem;
+        height: 2rem;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+
+        .infoInput {
+            border: none;
+            outline: none;
+            background-color: var(--inputColor);
+            border-radius: 1rem;
+            font-size: 14px;
+            padding: 12px;
+            flex: 1;
+            border: 1px solid transparent;
+
+            &:focus {
+                border: 1px solid orange;
+            }
+        }
+
+
+        >span {
+            padding-left: 0.4rem;
+            font-size: 0.85rem;
+
+            .btn-SignUp {
+                width: 6rem;
+                height: 2rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+
+}

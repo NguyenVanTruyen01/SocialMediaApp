@@ -1,0 +1,33 @@
+.follower {
+    width: 100%;
+    box-sizing: border-box;
+
+    >div {
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            text-overflow: ellipsis;
+
+            span:nth-of-type(1) {
+                font-weight: bold;
+            }
+
+            span:nth-of-type(2) {
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .fc-btn {
+        color: var(--orange);
+        background: transparent;
+        border: 1px solid orange;
+
+        &:hover {
+            color: white !important;
+            background: var(--buttonBg) !important;
+        }
+    }
+
+}
